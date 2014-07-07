@@ -1,0 +1,81 @@
+/* ex1: estilo basico */
+label {
+	display: block;
+}
+
+/* ex1b: estilo visual basico */
+h2 {
+	background-image: url(../img/sobre-background.jpg);
+	font-size: 30px;
+	font-weight: bold;
+	padding: 10px;
+}
+
+form {
+	margin: 30px;
+	width: 380px;
+}
+
+label {
+	color: #555;
+	font-size: 18px;
+	margin-top: 15px;
+	margin-bottom: 4px;
+}
+input, select, textarea, fieldset {
+	border: 2px solid #999;
+	border-radius: 3px;
+	font-size: 18px;
+	padding: 5px;
+}
+
+/* ex opcional tamanhos (opcional) */
+textarea, input[name=nome], input[name=email] {
+	width: 366px;
+}
+
+
+/* ex2a botao */
+input[type=submit] {
+	background: #91bd3c;
+	box-shadow: 0 1px 5px #333;
+	border: 0;
+	margin: 15px 0;
+	padding: 10px;
+
+	background: -webkit-linear-gradient(top, #b1dd5c, #91bd3c);
+	background: -moz-linear-gradient(top, #b1dd5c, #91bd3c);
+	background: -ms-linear-gradient(top, #b1dd5c, #91bd3c);
+	background: -o-linear-gradient(top, #b1dd5c, #91bd3c);
+	background: linear-gradient(top, #b1dd5c, #91bd3c);
+}
+
+/* ex pseudo classes e elementos */
+input:focus, textarea:focus {
+	background: #ffffd3;
+}
+label[for]:after {
+	content: ':';
+}
+input[type=submit]:active {
+	box-shadow: 0 1px 2px #111;
+	position: relative;
+	top: 2px;
+}
+
+/* opcional */
+fieldset {
+	border: 1px dotted #777;
+	border-radius: 5px;
+}
+
+/* integracao google maps */
+.contato {
+	position: relative;
+}
+#google-maps {
+	position: absolute;
+	top: 80px;
+	right: 0;
+}
+
